@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Louis Carillo - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f0f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+            border-radius: 8px;
+        }
+
+        /* Left Column (Personal Info) */
+        .sidebar {
+            background-color: #4b3f72;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .current-research img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .section-title {
+            background-color: #6a5fa4;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .contact, .skills, .languages, .links {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact a, .links a {
+            color: #ffdcfa;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .skills ul, .languages ul, .links ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills li, .links li {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .languages li{
+
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            font-size: 30px;
+        }
+        
+
+        .skills img, .links img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Right Column (Main Content) */
+        .main-content {
+            padding: 20px;
+        }
+
+        /* Name and Status at the top of the right column */
+        .main-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+            background-color: #482ecc;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .main-header h1 {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .main-header p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #4b3f72;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #6a5fa4;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            margin-top: 30px;
+            color: #666;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .main-header h1 {
+                font-size: 32px;
+            }
+
+            .main-header p {
+                font-size: 20px;
+
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .name-mobile {
+                display: block; /* Show on mobile */
+            }
+            
+        }
+        .circle {
+            display: inline-block;
+            width: 8px;  /* Size of the circle */
+            height: 8px; /* Size of the circle */
+            background-color: #6a5fa4; /* Color of the circle */
+            border-radius: 50%; /* Makes it a circle */
+            margin-right: 5px; /* Space between the circle and the text */
+            vertical-align: middle; /* Align with the text */
+        }
+
+        .name-mobile {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            display: none; /* Hidden by default */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Left Column) -->
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="profile_picture.jpg" alt="Yann Bouchereau">
+            </div>
+            <div class="name-mobile">Yann Bouchereau</div> <!-- Mobile Name -->
+
+            <!-- Contact Me Section -->
+            <div class="section-title">Contact Me</div>
+            <div class="contact">
+                <a href="mailto:louis.carillo@enpc.fr">yann.bouchereau at enpc.fr</a>
+                <a href="tel:+33750255438">+33618360486</a>
+            </div>
+
+            <!-- Programming Skills Section -->
+            <div class="section-title">Programming Skills</div>
+            <div class="skills">
+                <ul>
+                    <li><img src="logos/python.svg" alt="Python">Python</li>
+                    <li><img src="logos/cpp.svg" alt="C++">C++</li>
+                </ul>
+            </div>
+
+
+
+            <!-- Links Section -->
+            <div class="section-title">Links</div>
+            <div class="links">
+                <ul>
+                    <li><img src="logos/github.svg" alt="GitHub"><a href="https://github.com/Yabou2306" target="_blank">GitHub</a></li>
+                    <li><img src="logos/pdf.svg" alt="PDF"><a href="pdf/CV_french.pdf" download>Download French Resume (PDF)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content (Right Column) -->
+        <div class="main-content">
+            <!-- Name and Status -->
+            <div class="main-header">
+                <h1>Yann Bouchereau</h1>
+                <p>PhD student at CERMICS</p>
+            </div>
+
+            <!-- Current Research -->
+            <div class="section">
+                <h3>Current Research</h3>
+                <p>
+                    I am currently working on my PhD under the supervision of Tony Lelièvre, Urbain Vaes and Gabriel Stoltz on the topic: <i>"Metastability in statistical physics: a mathematical and numerical analysis"</i>. The specific problem that interest me right now is the <i>Narrow escape problem</i>. In a few words, a brownian motion is trapped in a bounded 2 or 3 dimensional domain with 1 (or many) small holes. The goal is to compute precisely the assymptotic of the exit time and distribution of the exit point in the limit where the holes decrease in size. 
+                    <img src="figure.png" alt="_blank" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+                </p>
+            </div>
+
+
+            <!-- Publications Section -->
+            <div class="section">
+                <h3>Publications</h3>
+                <p><span class="circle"></span><strong>Eigenvector Dreaming</strong><br>
+                    <i>Marco Benedetti, Louis Carillo, Enzo Marinari, Marc Mèzard, J. Stat. Mech. (2024)</i> <a href="https://arxiv.org/abs/2308.13445">arXiv:2308.13445</a><br>
+                </p>
+                <p><span class="circle"></span><strong>Hard-disk computer simulations — a historic perspective</strong><br>
+                    <i> Botao Li, Yoshihiko Nishikawa, Philipp Hoellmer, Louis Carillo, A. C. Maggs, Werner Krauth, J. Chem. Phys. (2022)</i><a href="https://arxiv.org/abs/2207.07715">arXiv:2207.07715</a>
+                    <br>
+                </p>
+            </div>
+            
+            <!-- Conferences Section 
+            <div class="section">
+                <h3>Conferences</h3>
+                <p><span class="circle"></span><strong>Seminar of the Young Researcher  </strong><br>
+                    Cermics Marne-la-Vallée, 29 July 2025<br>
+                    <a href="pdf/Young2025.pdf" download>Download Slides (PDF)</a>
+                </p>
+                <p><span class="circle"></span><strong>Summer School <a href="https://www.cecam.org/workshop-details/summer-school-on-sampling-high-dimensional-probability-measures-with-applications-in-nonequilibrium-molecular-dynamics-and-statistics-1448" target="_blank">"Summer School on Sampling High-Dimensional Probability Measures with Applications in (Non)Equilibrium Molecular Dynamics and Statistics"</a> </strong><br>
+                    Birmingham university, 7-11 July 2025<br>
+                    My notebook is on the summer's school website
+                </p>
+                <p><span class="circle"></span><strong>Workshop "Journées QSD and Related Fields"</strong><br>
+                    Cermics Marne-la-Vallée, 21-23 May 2025<br>
+                    <a href="pdf/QSD2025.pdf" download>Download Slides (PDF)</a>
+                </p>
+                <p><span class="circle"></span><strong>Workshop <a href="https://www.cecam.org/workshop-details/stochastics-processes-inferences-in-complex-systems-1390" target="_blank">"Stochastics processes: Inferences in complex systems"</a></strong><br>
+                    CECAM-HQ Lausanne, 14-16 May 2025<br>
+                    <a href="pdf/cecam2025.pdf" download>Download Slides (PDF)</a>
+                </p>
+                <p><span class="circle"></span><strong>Conference <a href="https://jstat.phys.ens.fr/fr" target="_blank">"Journées de la physique statistique"</a></strong><br>
+                    ENS Paris, 30-31 January 2025<br>
+                    <a href="pdf/slide_journee_phy_stat.pdf" download>Download Slides (PDF)</a>
+                </p>
+                <p><span class="circle"></span><strong>Workshop <a href="https://indico3.mpi-magdeburg.mpg.de/event/40/" target="_blank">“Uncertainty Quantification in Molecular Simulation”</a></strong><br>
+                    Max Planck Institute for Dynamics of Complex Technical Systems, 29-30 August 2024
+                </p>
+                <p><span class="circle"></span><strong>Workshop <a href="https://sites.google.com/site/xiaochengshang/network/bham-workshop-july-24" target="_blank">"Synergies Between Mathematics, Data Science, and Molecular Simulations in Materials Science"</a></strong><br>
+                    University of Birmingham, 3-5 July 2024<br>
+                    <a href="pdf/posterBirmingham.pdf" download>Download Poster (PDF)</a>
+                </p>
+                <p><span class="circle"></span><strong>Workshop <a href="https://www.bcamath.org/events/kemap/en/" target="_blank">"Kinetic equation, mathematical physics and probability"</a></strong><br>
+                    BCAM, Bilbao, 17-21 June 2024
+                </p>
+            </div>-->
+
+            <!-- Experience Section -->
+            <div class="section">
+                <h3>Experience</h3>
+                <p><span class="circle"></span><strong>Master 2 Internship — Microcanonical Langevin Dynamics</strong><br>
+                    <i>4 months in 2024 — With Gabriel Stoltz's team in ENPC</i><br>
+                    Research on a non-standard sampling method for better understanding and more efficient implementation.
+                </p>
+                <p><span class="circle"></span><strong>Gap year — Dreaming in Hopfield Networks</strong><br>
+                    <i>2022/2023 academic year — With Enzo Marinari's team in La Sapienza</i><br>
+                    Analytical and numerical studies on Hopfield models and new training methods. This resulted in a published paper.
+                </p>
+                <p><span class="circle"></span><strong>Master 1 Internship — Symmetries in Quantum Physics</strong><br>
+                    <i>15 weeks in Spring/Summer 2022 — With Ulrich Scholwöck's team in LMU</i><br>
+                    Added support for U(1) and SU(2) symmetries in quantum Hamiltonian system simulations like atomic chains.
+                </p>
+                <p><span class="circle"></span><strong>Bachelor Internship — Hard Disks in 2D</strong><br>
+                    <i>6 weeks in Summer 2021 — With Werner Krauth's team in ENS</i><br>
+                    Historical aspects and simple solutions for calculating pressure in 2D hard-sphere systems. This resulted in a published paper.
+                </p>
+            </div>
+
+            <!-- Teaching Section 
+            <div class="section">
+                <h3>Teaching</h3>
+                <p><span class="circle"></span><strong>Scientific computing</strong><br>
+                    <i>Second semester 2024/2025 at ENPC</i><br>
+                    Advanced programming class for STEM bachelor students, covering basic concepts such as how to integrate, solve a ODE, a linear system numerically.
+                    Done in Julia. 
+                </p>
+                <p><span class="circle"></span><strong>Projet on Hopfield network</strong><br>
+                    <i>Second semester 2024/2025 at ENPC</i><br>
+                    Project for 4 students on Hopfield networks, where they implemented the dreaming algorithms that I developped in Rome. 
+                </p>
+                <p><span class="circle"></span><strong>Python Programming</strong><br>
+                    <i>First semester 2024/2025 at ENPC</i><br>
+                    Advanced Python topics for STEM bachelor students, covering classes, inheritance, error handling, and interfaces.
+                </p>
+                <p><span class="circle"></span><strong>Scientific Foundations of Energy Transition</strong><br>
+                    <i> First semester 2024/2025 at ENPC</i><br>
+                    Introduction to physics tied to renewable energies for bachelor students, covering radiation theory, semi-conductors.
+                </p>
+                <p><span class="circle"></span><strong>Tutoring</strong><br>
+                    During my Bachelor's, I tutored students in Maths, Physics, and Piano.
+                </p>
+            </div>-->
+
+            <!-- Studies Section -->
+            <div class="section">
+                <h3>Studies</h3>
+                <p><span class="circle"></span><strong>Master  of Complex Systems</strong><br>
+                    Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette), 2024<br>
+                </p>
+                <p><span class="circle"></span><strong> Engineering </strong><br>
+                    Ecole Nationale des Ponts et Chaussées, Champs sur Marne, 2021<br>
+                </p>
+                <p><span class="circle"></span><strong>Prépa MPSI MP</strong><br>
+                    Lycée Saint Louis, Paris, 2018/2021<br>
+                </p>
+            </div>
+
+            <footer>
+                &copy; 2024 Louis Carillo.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
